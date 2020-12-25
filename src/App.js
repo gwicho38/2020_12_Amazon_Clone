@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import Header from "./Header";
+import Home from "./Home";
 
 function App() {
   return (
+    //BEM convention followed by naming app here
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/*Header Component -- top part of app*/}
+      <Header></Header>
+      {/*Home Component -- body of app*/}
+      <Home></Home>
     </div>
   );
 }
