@@ -7,7 +7,7 @@ function Product({id, title, image, price, rating}) {
     //note that basket is destructured from state per pattern https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
     const [{basket}, dispatch] = useStateValue(); 
 
-    console.log('this is the basket >>>', basket);
+    //console.log('this is the basket >>>', basket);
     const addToBasket = () => {
         //dispatch the item into the data layer
         dispatch({
